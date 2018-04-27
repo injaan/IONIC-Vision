@@ -7,8 +7,11 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <img id="sourceImg" style="width:224px; height:290px">
+  <br>
+  <br>
+  <button id="predictBtn" ion-button (click)="getPhoto()">predict</button>
+  <ul *ngFor="let label of predictionLabels">
+    <li>{{label}}</li>
+  </ul>
 </ion-content>
